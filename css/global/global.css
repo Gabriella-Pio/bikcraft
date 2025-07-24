@@ -24,6 +24,7 @@ img {
   display: block;
 }
 
+/* Seletor de atributo - seleciona apenas as imagens cuja src terminam com .jpg */
 img[src$=".jpg"] {
   border-radius: 4px;
 }
