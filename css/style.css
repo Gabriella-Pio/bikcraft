@@ -22,3 +22,6 @@
 
 /* Bicicletas */
 @import "./bicicletas/bicicletas-lista.css";
+
+/* Termos e Condições */
+@import "./termos/termos.css";
