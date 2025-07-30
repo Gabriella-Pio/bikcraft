@@ -24,3 +24,6 @@
 
 /* Termos e Condições */
 @import "./termos/termos.css";
+
+/* Seguros */
+@import "./seguros/seguros.css";
