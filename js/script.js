@@ -1,27 +1,22 @@
-// ativar itens do menu
+// Ativar Links do Menu
 const links = document.querySelectorAll('.header-menu a');
 
-// exemplo de funcionamento do includes
-console.log('javascript'.includes('java'));
-
-function ativarLinks(link) {
+function ativarLink(link) {
   const url = location.href;
   const href = link.href;
-
   if (url.includes(href)) {
     link.classList.add('ativo');
   }
 }
 
-links.forEach(ativarLinks);
+links.forEach(ativarLink);
 
-// ativar itens do orçamento
-const parametros = new URLSearchParams(location.search); // search = propriedade de busca da URL
+// Ativar Items do Orçamento
+
+const parametros = new URLSearchParams(location.search);
 
 function ativarProduto(parametro) {
-  console.log("param: " + parametro);
   const elemento = document.getElementById(parametro);
-  console.log("elem: " + elemento);
   if (elemento) {
     elemento.checked = true;
   }
@@ -29,8 +24,7 @@ function ativarProduto(parametro) {
 
 parametros.forEach(ativarProduto);
 
-
-// perguntas frequentes
+// Perguntas Frequentes
 const perguntas = document.querySelectorAll('.perguntas button');
 
 function ativarPergunta(event) {
@@ -39,7 +33,6 @@ function ativarPergunta(event) {
   const resposta = document.getElementById(controls);
 
   resposta.classList.toggle('ativa');
-
   const ativa = resposta.classList.contains('ativa');
   pergunta.setAttribute('aria-expanded', ativa);
 }
@@ -50,4 +43,20 @@ function eventosPerguntas(pergunta) {
 
 perguntas.forEach(eventosPerguntas);
 
-console.log(perguntas);
+// Galeria de Bicicletas
+const galeria = document.querySelectorAll('.bicicleta-imagens img');
+const galeriaContainer = document.querySelector('.bicicleta-imagens');
+
+function trocarImagem(event) {
+  const img = event.currentTarget;
+  const media = matchMedia('(min-width: 1000px)').matches;
+  if (media) {
+    galeriaContainer.prepend(img);
+  }
+}
+
+function eventosGaleria(img) {
+  img.addEventListener('click', trocarImagem);
+}
+
+galeria.forEach(eventosGaleria);
