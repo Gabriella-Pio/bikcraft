@@ -6,13 +6,9 @@ console.log("javascript".includes("java"));
 function ativarLinks(link) {
   const url = location.href;
   const href = link.href;
-
-  // if(url === href) {
-    //   console.log(link);
-    // }
     
     if (url.includes(href)) {
-      console.log(link);
+      link.classList.add('ativo');
     }
   }
   
