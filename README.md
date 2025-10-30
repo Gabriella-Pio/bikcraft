@@ -18,38 +18,40 @@ O site apresenta o catálogo de bicicletas, páginas institucionais e formulári
 
 A organização do projeto segue uma abordagem modular, onde os arquivos CSS são separados por contexto (global, página específica ou componente) e o JavaScript utiliza um plugin para auxiliar nas animações.
 
+```text
 bikcraft/
-├── bicicletas/ # Páginas de produtos individuais
-│ ├── magic.html
-│ ├── nebula.html
-│ └── nimbus.html
+├── bicicletas/            # Páginas de produtos individuais
+│   ├── magic.html
+│   ├── nebula.html
+│   └── nimbus.html
 │
-├── css/ # Estilos organizados por módulos
-│ ├── bicicleta/ # Estilos da página de produto individual
-│ ├── bicicletas/ # Estilos da lista de bicicletas
-│ ├── contato/ # Estilos de contato e lojas
-│ ├── global/ # Estilos globais (header, footer, reset)
-│ ├── home/ # Estilos da página inicial
-│ ├── orcamento/ # Estilos da página de orçamento
-│ ├── seguros/ # Estilos da página de seguros
-│ ├── termos/ # Estilos da página de termos
-│ ├── utilidades/ # Classes reutilizáveis (cores, tipografia, formulário, etc.)
-│ ├── style.css
-│ └── style.min.css
+├── css/                   # Estilos organizados por módulos
+│   ├── bicicleta/         # Estilos da página de produto individual
+│   ├── bicicletas/        # Estilos da lista de bicicletas
+│   ├── contato/           # Estilos de contato e lojas
+│   ├── global/            # Estilos globais (header, footer, reset)
+│   ├── home/              # Estilos da página inicial
+│   ├── orcamento/         # Estilos da página de orçamento
+│   ├── seguros/           # Estilos da página de seguros
+│   ├── termos/            # Estilos da página de termos
+│   ├── utilidades/        # Classes reutilizáveis (cores, tipografia, formulário, etc.)
+│   ├── style.css
+│   └── style.min.css
 │
-├── js/ # Scripts JavaScript
-│ ├── plugins/
-│ │ └── simple-anime.js # Plugin de animação
-│ └── script.js # Lógica principal
+├── js/                    # Scripts JavaScript
+│   ├── plugins/
+│   │   └── simple-anime.js   # Plugin de animação
+│   └── script.js             # Lógica principal
 │
-├── img/ # Imagens otimizadas do projeto
+├── img/                    # Imagens otimizadas do projeto
 │
-├── index.html # Página inicial
-├── bicicletas.html # Página de catálogo de bicicletas
-├── contato.html # Página de contato
-├── orcamento.html # Página de orçamento
-├── seguros.html # Página de seguros
-└── termos.html # Página de termos e condições
+├── index.html              # Página inicial
+├── bicicletas.html         # Página de catálogo de bicicletas
+├── contato.html            # Página de contato
+├── orcamento.html          # Página de orçamento
+├── seguros.html            # Página de seguros
+└── termos.html             # Página de termos e condições
+```
 
 ---
 
@@ -91,9 +93,7 @@ bikcraft/
 ## 🧑‍💻 Desenvolvedora
 
 **Gabriella Pio Corrêa**
+📍 Desenvolvedora em formação - Estudante de Engenharia de Software
 
-| Ícone | Detalhes |
-| :--- | :--- |
-| 📍 | Desenvolvedora em formação | Estudante de Engenharia de Software |
 ---
 Este projeto é apenas para fins de estudo e aprendizado. Feito a partir das aulas da plataforma Origamid.
